@@ -1,0 +1,10 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[user]
+	name = Tom Shen
+	email = tom@shen.io
+[push]
+	default = simple
+[alias]
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"

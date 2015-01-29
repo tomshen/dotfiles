@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ln -s $PWD/.zshrc $HOME/.zshrc
+ln -s $PWD/.vimrc $HOME/.vimrc
+ln -s $PWD/.gitconfig $HOME/.gitconfig
+ln -s $PWD/.tmux.conf $HOME/.tmux.conf
+
+git submodule init && git submodule update
+
+mkdir -p ~/.zfunctions && ln -s "$PWD/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
