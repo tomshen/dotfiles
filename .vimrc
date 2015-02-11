@@ -29,6 +29,7 @@ set nowb
 " === Indentation ===
 let tabsize = 4
 set autoindent
+set expandtab
 set smartindent
 set smarttab
 execute "set tabstop=".tabsize
