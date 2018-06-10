@@ -45,3 +45,8 @@ fi
 alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
+
+. `brew --prefix`/etc/profile.d/z.sh
+
+alias g='./gradlew'
+alias ydl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
