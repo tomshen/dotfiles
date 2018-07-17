@@ -3,7 +3,7 @@ setopt autocd          # if a command is a directory, go to it
 setopt completealiases # tab-complete aliases
 setopt nomatch         # print error if a pattern doesn't match
 
-source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # b/c Debian/Ubuntu defaults are weird
 if [ `uname` = "Linux" ]; then
