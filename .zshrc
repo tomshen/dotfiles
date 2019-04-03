@@ -50,3 +50,4 @@ alias l='ls -CF'
 
 alias g='./gradlew'
 alias ydl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+alias git-delete-personal-branches='git branch -D $(printf "%s\n" $(git branch) | grep "ts/")'

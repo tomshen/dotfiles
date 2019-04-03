@@ -11,6 +11,7 @@
     amend = commit --amend
     ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
     root = rev-parse --show-toplevel
+    checkout-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
     required = true
