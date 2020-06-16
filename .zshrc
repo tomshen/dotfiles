@@ -31,6 +31,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
 
 autoload -Uz compinit && compinit
 
+. `brew --prefix`/etc/profile.d/z.sh
+
 # === Powerlevel10k ===
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -54,8 +56,3 @@ alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
-. `brew --prefix`/etc/profile.d/z.sh
-
-alias g='./gradlew'
-alias ydl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
-alias git-delete-personal-branches='git branch -D $(printf "%s\n" $(git branch) | grep "ts/")'
