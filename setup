@@ -4,6 +4,7 @@ ln -s $PWD/.zshrc $HOME/.zshrc
 ln -s $PWD/.vimrc $HOME/.vimrc
 ln -s $PWD/.gitconfig $HOME/.gitconfig
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
+ln -s $PWD/.p10k.zsh $HOME/.p10k.zsh
 
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install diff-so-fancy
