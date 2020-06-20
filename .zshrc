@@ -10,8 +10,6 @@ setopt autocd          # if a command is a directory, go to it
 setopt completealiases # tab-complete aliases
 setopt nomatch         # print error if a pattern doesn't match
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # b/c Debian/Ubuntu defaults are weird
 if [ `uname` = "Linux" ]; then
 	autoload -U up-line-or-beginning-search
@@ -23,7 +21,7 @@ if [ `uname` = "Linux" ]; then
 fi
 
 # === Completion ===
-zstyle :compinstall filename '/Users/tom/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 # case-insensitive (all),partial-word and then substring completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
@@ -31,10 +29,12 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
 
 autoload -Uz compinit && compinit
 
-. `brew --prefix`/etc/profile.d/z.sh
+# === ZSH Plugins ===
+source ~/.dotfiles/plugins/zsh-z.plugin.zsh
+source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # === Powerlevel10k ===
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
