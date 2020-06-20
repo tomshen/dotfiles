@@ -31,10 +31,10 @@ autoload -Uz compinit && compinit
 
 # === ZSH Plugins ===
 source ~/.dotfiles/plugins/zsh-z.plugin.zsh
-source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # === Powerlevel10k ===
-source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.dotfiles/plugins/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
