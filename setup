@@ -9,5 +9,3 @@ ln -s $PWD/.gitconfig $HOME/.gitconfig
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 ln -s $PWD/.p10k.zsh $HOME/.p10k.zsh
 
-brew install diff-so-fancy
-# npm install -g diff-so-fancy

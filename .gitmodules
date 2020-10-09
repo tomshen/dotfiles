@@ -4,3 +4,9 @@
 [submodule "powerlevel10k"]
 	path = plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "bin/prettyping"]
+	path = bin/prettyping
+	url = git@github.com:denilsonsa/prettyping.git
+[submodule "bin/diff-so-fancy"]
+	path = bin/diff-so-fancy
+	url = git@github.com:so-fancy/diff-so-fancy.git

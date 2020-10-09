@@ -56,3 +56,7 @@ alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# === Improved CLI Tools ===
+# Inspired by https://remysharp.com/2018/08/23/cli-improved
+alias ping='~/.dotfiles/bin/prettyping/prettyping --nolegend'
+
