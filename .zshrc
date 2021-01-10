@@ -20,15 +20,6 @@ if [ `uname` = "Linux" ]; then
 	bindkey "^[[B" down-line-or-beginning-search # Down
 fi
 
-# === Completion ===
-zstyle :compinstall filename '~/.zshrc'
-
-# case-insensitive (all),partial-word and then substring completion
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
-'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-autoload -Uz compinit && compinit
-
 # === ZSH Plugins ===
 source ~/.dotfiles/plugins/zsh-z.plugin.zsh
 source ~/.dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -39,6 +30,16 @@ source ~/.dotfiles/plugins/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# === Completion ===
+zstyle :compinstall filename '~/.zshrc'
+
+# case-insensitive (all),partial-word and then substring completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
+'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+zstyle ':completion:*' menu select
+
+autoload -Uz compinit && compinit
 # === Aliases ===
 if [ `uname` = "Darwin" ]; then
 	alias ls='ls -G'
